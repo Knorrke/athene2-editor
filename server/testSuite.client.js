@@ -15,7 +15,7 @@ d.on('remote', function (remote) {
 
 function runTests(remote) {
     timestampsStart[i] = new Date().getTime();
-    var calls = Math.pow(i,3)*5 + 1,
+    var calls = Math.pow(i,2)*5 + 1,
         asyncTasks = [];
     for (var j = 0; j < calls; j++) {
         asyncTasks.push(function (pushCallback) {
